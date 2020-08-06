@@ -1,0 +1,135 @@
+body {
+    font-family: 'Ubuntu', sans-serif;
+    color: #fff;
+    background: url(../picture/section.jpg) ;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h1,h2,h3,h4,h5,h6,ul,li,p,a {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+    color: #fff;
+    text-decoration: none;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.log-in {
+    width: 400px;
+    height: 522px;
+    background-color: #28282d;
+    -webkit-box-shadow: 0 5px 25px 0 rgba(0,0,0,0.3);
+    box-shadow: 0 5px 25px 0 rgba(0,0,0,0.3);
+    position: relative;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+.log-in:before {
+    content: '';
+    width: 400px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    background: linear-gradient(
+        90deg, 
+        #ff55a5 0%, 
+        #ff5860 
+        100%);
+}
+.log-in .logo {
+    padding: 50px 0;
+}
+.log-in .form {
+    display: flex;
+    flex-flow: column;
+    gap: 15px;
+    color: rgba(255, 255, 255, 0.75);
+}
+.log-in .form input[type='text'] {
+    width: 295px;
+    height: 50px;
+    background-color: #2b2b31;
+    border: 0;
+    font-size: 15px;
+    border-radius: 2px;
+    padding: 0 20px;
+    color: #fff;
+    outline: none;
+}
+.log-in .form input[type='text']::placeholder {
+    color: #757574;
+}
+.log-in .form input[type='checkbox'] {
+    margin-right: 10px;
+}
+.log-in .form label {
+    color: rgba(255,255,255,0.5);
+}
+.log-in .form .check {
+    margin-bottom: 15px 0 10px;
+}
+.log-in .form button {
+    width: 280px;
+    height: 50px;
+    outline: none;
+    background-image: 
+    linear-gradient(
+        90deg, 
+        #ff55a5 0%, 
+        #ff5860 100%);
+        -webkit-box-shadow: 0 0 20px 0 rgba(255,88,96,0.5);
+        box-shadow: 0 0 20px 0 rgba(255,88,96,0.5);
+    border: 0;
+    border-radius: 2px;
+    padding: 0 20px;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 13px;
+    opacity: 0.85;
+    transition: 0.3s ease-in;
+}
+.log-in .form button:hover {
+    opacity: 1;
+    transition: 0.3s ease-in;
+}
+.log-in .form h6 {
+    text-align: center;
+    color: rgba(255,255,255,0.5);
+    font-size: 14px;
+}
+.log-in .form h6:first-of-type {
+    margin-top: 20px;
+}
+.log-in .form h6 span, .log-in .form h6:last-of-type {
+    background-image: -webkit-linear-gradient(0deg, #ff55a5 0%, #ff5860 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: #ff5860;
+    transition: 0.5s;
+    opacity: 0.8;
+}
+.log-in .form h6 span:hover, .log-in .form h6:last-of-type:hover {
+    transition: 0.5s;
+    opacity: 1;
+    cursor: pointer;
+}
+
+/* 
+background-image: -webkit-linear-gradient(0deg, #ff55a5 0%, #ff5860 100%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+color: #ff5860; */
